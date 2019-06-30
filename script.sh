@@ -5,9 +5,9 @@ aws ecr create-repository --repository-name appimage
 docker rmi 855754041257.dkr.ecr.us-east-2.amazonaws.com/appimage:latest
 docker rmi appimage:latest
 docker build -t appimage .
-docker tag appimage:latest 855754041257.dkr.ecr.us-east-2.amazonaws.com/appimage:latest 
+docker tag appimage:latest 855754041257.dkr.ecr.us-east-2.amazonaws.com/appimage:latest
 docker system prune -f
-docker push 855754041257.dkr.ecr.us-east-2.amazonaws.com/appimage:latest		
+docker push 855754041257.dkr.ecr.us-east-2.amazonaws.com/appimage:latest
 
 
 
