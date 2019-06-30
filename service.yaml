@@ -1,0 +1,22 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: sampleapp-service
+  namespace: default
+  selfLink: "/api/v1/namespaces/default/services/sampleapp-service"
+  labels:
+    run: sampleapp
+spec:
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+    nodePort: 32389
+  selector:
+    run: sampleapp
+  type: NodePort
+  sessionAffinity: None
+  externalTrafficPolicy: Cluster
+status:
+  loadBalancer: {}
