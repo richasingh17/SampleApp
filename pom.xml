@@ -5,7 +5,7 @@
   <artifactId>DockerExample</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>DockerExample Maven Webapp</name>
+  <name>SampleApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>DockerExample</finalName>
+    <finalName>SampleApp</finalName>
   </build>
 </project>
